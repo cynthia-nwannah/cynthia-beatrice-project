@@ -2,25 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>cynthia-batrice project</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+    <h1 id="title">Survey form</h1>
+    <p id="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem quam laboriosam doloribus ut illum quis quibusdam! A, explicabo? Dolor, quos.</p>
+    <form id="survey-form">
+      <label for=“name” id= "name-label">Enter your name</label>
+      <input type="text" id="name" placeholder="your name" required>
+      <label for="email" id="email-label">Enter your email</label>
+      <input type="email" id="email" placeholder="your email" required>
+      <label for="number" id="number-label">enter your number</label>
+      <input type="number" id="number" placeholder="your number" min="5" max="50" required>
+      <label for="drop down">select the best option</label>
+      <select id="dropdown" name="dropdown">
+        <option value="student" id="dropdown">Student</option>
+        <option value="employed" id="dropdown">Employed</option>
+       <option value="unemployed" id="dropdown">Unemployed</option>
+        <option value="self-employed">Self-employed</option>
+        </select>
+        <input type="radio" id="name" value="name" name="yes">
+        <label for="yes">yes</label>
+        <input type="radio" id="name" value="name" name="yes">
+        <label for="no">no</label>
+        <input type="checkbox" name="agree" value="agree" id="checkbox">
+        <label for="agree">agree</label>
+        <input type="checkbox" name="disagree" value="disagree" id="checkbox">
+        <label for="disagree">disagree</label>
+        <label for="comment">comment</label>
+        <textarea name="comment" id="comment" cols="30" rows="10">
+          add your comment here!
+        </textarea>
+        <button id="submit">submit</button>
+    </form>
     <script  src="js/index.js"></script>
   </body>
 </html>
